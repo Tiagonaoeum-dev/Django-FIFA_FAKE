@@ -105,3 +105,4 @@ Pensado paenas para testes
 ## Autor Tiago, aluno SENAICTTI 
 
 Projeto acadêmico para aprendizado de desenvolvimento web com Django.
+Porem não me garanto muito :,D
