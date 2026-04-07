@@ -106,3 +106,57 @@ Pensado paenas para testes
 
 Projeto acadêmico para aprendizado de desenvolvimento web com Django.
 Porem não me garanto muito :,D
+
+---
+
+## Exemplos para incluir nos dados dos jogadores
+
+Exemplo 1 (jogador atacante)
+Nome: Neymar Jr
+Time: Al-Hilal
+Posição: LW
+Overall: 89
+Pace: 87
+Shooting: 85
+Passing: 86
+Dribbling: 92
+Defense: 37
+Physical: 60
+
+Exemplo 2 (jogador completo)
+Nome: Kevin De Bruyne
+Time: Manchester City
+Posição: CM
+Overall: 91
+Pace: 74
+Shooting: 86
+Passing: 93
+Dribbling: 88
+Defense: 64
+Physical: 78
+
+Exemplo 3 (defensor)
+Nome: Virgil van Dijk
+Time: Liverpool
+Posição: CB
+Overall: 90
+Pace: 78
+Shooting: 60
+Passing: 71
+Dribbling: 72
+Defense: 91
+Physical: 86
+
+Exemplo 4 (goleiro adaptado)
+Nome: Alisson Becker
+Time: Liverpool
+Posição: GK
+Overall: 89
+Pace: 50
+Shooting: 20
+Passing: 70
+Dribbling: 60
+Defense: 85
+Physical: 80
+
+
