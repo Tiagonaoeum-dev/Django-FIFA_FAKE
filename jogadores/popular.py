@@ -1,0 +1,47 @@
+from .models import Jogador
+
+def inserir_jogadores():
+    if Jogador.objects.exists():
+        print("Jogadores já cadastrados")
+        return
+
+    Jogador.objects.create(
+        nome="Neymar Jr",
+        time="Al-Hilal",
+        posicao="LW",
+        overall=89,
+        pace=87,
+        shooting=85,
+        passing=86,
+        dribbling=92,
+        defense=37,
+        physical=60
+    )
+
+    Jogador.objects.create(
+        nome="Kevin De Bruyne",
+        time="Manchester City",
+        posicao="CM",
+        overall=91,
+        pace=74,
+        shooting=86,
+        passing=93,
+        dribbling=88,
+        defense=64,
+        physical=78
+    )
+
+    Jogador.objects.create(
+        nome="Virgil van Dijk",
+        time="Liverpool",
+        posicao="CB",
+        overall=90,
+        pace=78,
+        shooting=60,
+        passing=71,
+        dribbling=72,
+        defense=91,
+        physical=86
+    )
+
+    print("Jogadores inseridos com sucesso")
