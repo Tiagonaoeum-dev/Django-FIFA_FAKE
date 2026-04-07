@@ -1,15 +1,128 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-    <title>FIFA Fake</title>
+    <meta charset="UTF-8">
+    <title>Fifinha</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            width: 220px;
+            height: 340px;
+            background: linear-gradient(145deg, #d4af37, #f1c40f);
+            border-radius: 15px;
+            margin: 15px;
+            padding: 15px;
+            color: black;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+            position: relative;
+        }
+
+        .overall {
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .posicao {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .nome {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .time {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .stats {
+            margin-top: 10px;
+        }
+
+        .stat {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+        }
+
+        .barra {
+            height: 6px;
+            background: #333;
+            border-radius: 5px;
+            margin-bottom: 5px;
+        }
+
+        .barra span {
+            display: block;
+            height: 100%;
+            background: limegreen;
+            border-radius: 5px;
+        }
+    </style>
 </head>
+
 <body>
 
-<h1>Jogadores</h1>
+<h1>Jogadores Fifinha</h1>
 
+<div class="container">
 {% for jogador in jogadores %}
-    <p>{{ jogador.nome }} - {{ jogador.overall }}</p>
+    <div class="card">
+
+        <div class="overall">{{ jogador.overall }}</div>
+        <div class="posicao">{{ jogador.posicao }}</div>
+
+        <div class="nome">{{ jogador.nome }}</div>
+        <div class="time">{{ jogador.time }}</div>
+
+        <div class="stats">
+
+            <div class="stat">PAC {{ jogador.pace }}</div>
+            <div class="barra"><span style="width: {{ jogador.pace }}%;"></span></div>
+
+            <div class="stat">SHO {{ jogador.shooting }}</div>
+            <div class="barra"><span style="width: {{ jogador.shooting }}%;"></span></div>
+
+            <div class="stat">PAS {{ jogador.passing }}</div>
+            <div class="barra"><span style="width: {{ jogador.passing }}%;"></span></div>
+
+            <div class="stat">DRI {{ jogador.dribbling }}</div>
+            <div class="barra"><span style="width: {{ jogador.dribbling }}%;"></span></div>
+
+            <div class="stat">DEF {{ jogador.defense }}</div>
+            <div class="barra"><span style="width: {{ jogador.defense }}%;"></span></div>
+
+            <div class="stat">PHY {{ jogador.physical }}</div>
+            <div class="barra"><span style="width: {{ jogador.physical }}%;"></span></div>
+
+        </div>
+
+    </div>
 {% endfor %}
+</div>
 
 </body>
 </html>
+
