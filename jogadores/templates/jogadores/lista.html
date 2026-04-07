@@ -117,8 +117,9 @@
             <div class="stat">PHY {{ jogador.physical }}</div>
             <div class="barra"><span style="width: {{ jogador.physical }}%;"></span></div>
 
-        </div>
-
+            <a href="/editar/{{ jogador.id }}">Editar</a>
+            <a href="/excluir/{{ jogador.id }}">Excluir</a>
+            
     </div>
 {% endfor %}
 </div>
