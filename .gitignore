@@ -1,0 +1,33 @@
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+venv/
+.env/
+env/
+
+.DS_Store
+Thumbs.db
+
+db.sqlite3
+
+# Logs
+*.log
+
+.env
+*.env
+
+*.sqlite3
+media/
+staticfiles/
+
+**/migrations/*
+!**/migrations/__init__.py
+
+.vscode/
+.idea/
+
+# Arquivos temporários
+*.swp
+*~
