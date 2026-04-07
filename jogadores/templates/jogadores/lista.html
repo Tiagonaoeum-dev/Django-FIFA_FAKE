@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FIFA Fake</title>
+</head>
+<body>
+
+<h1>Jogadores</h1>
+
+{% for jogador in jogadores %}
+    <p>{{ jogador.nome }} - {{ jogador.overall }}</p>
+{% endfor %}
+
+</body>
+</html>
